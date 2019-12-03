@@ -57,8 +57,8 @@ public class CustomAdapter extends BaseAdapter {
         assert inflater != null;
         View rowView = inflater.inflate(R.layout.list_item, parent, false);
 
-        TextView your_first_text_view = (TextView) rowView.findViewById(R.id.listview_firsttextview);
-        TextView your_second_text_view = (TextView) rowView.findViewById(R.id.listview_secondtextview);
+        TextView your_first_text_view = rowView.findViewById(R.id.listview_firsttextview);
+        TextView your_second_text_view = rowView.findViewById(R.id.listview_secondtextview);
 
         your_first_text_view.setText(usersList.get(position).getContactPersonName());
         your_second_text_view.setText(usersList.get(position).getContactNumber());

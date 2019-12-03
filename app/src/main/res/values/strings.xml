@@ -12,4 +12,6 @@
     <string name="file_path">File Path</string>
     <string name="hint_enter_phone_number">Enter Phone Number</string>
     <string name="github">Github</string>
+    <string name="enter_item_name">enter_item_name</string>
+    <string name="enter_item_price">enter_item_price</string>
 </resources>

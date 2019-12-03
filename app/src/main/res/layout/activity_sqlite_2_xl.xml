@@ -6,7 +6,7 @@
     android:background="@android:color/black"
     android:orientation="vertical"
     android:padding="8dp"
-    tools:context=".SQLite2ExcelActivity">
+    tools:context=".SQLite2ExcelaActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,7 +18,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:hint="@string/hint_enter_name"
+            android:hint="@string/enter_item_name"
             android:inputType="text"
             android:textColor="@color/colorAccent"
             android:textColorHint="@color/colorAccent" />
@@ -28,7 +28,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:hint="@string/hint_enter_phone_number"
+            android:hint="@string/enter_item_price"
             android:inputType="phone"
             android:textColor="@color/colorAccent"
             android:textColorHint="@color/colorAccent" />
@@ -58,15 +58,6 @@
             android:text="@string/export"
             android:textColor="@color/colorAccent" />
 
-        <Button
-            android:id="@+id/btn_export_with_exclude"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="5dp"
-            android:layout_weight="1"
-            android:background="@color/colorPrimary"
-            android:text="@string/export_exclude"
-            android:textColor="@color/colorAccent" />
     </LinearLayout>
 
     <ListView

@@ -36,7 +36,6 @@ public class DBQueries {
         ContentValues values = new ContentValues();
         values.put(DBConstants.CONTACT_PERSON_NAME, users.getContactPersonName());
         values.put(DBConstants.CONTACT_NO, users.getContactNumber());
-        values.put(DBConstants.CONTACT_PHOTO, users.getContactPhoto());
         return database.insert(DBConstants.USER_TABLE, null, values) > -1;
     }
 
@@ -53,8 +52,7 @@ public class DBQueries {
                         String contactId = cursor.getString(cursor.getColumnIndex(DBConstants.CONTACT_ID));
                         String conPerson = cursor.getString(cursor.getColumnIndex(DBConstants.CONTACT_PERSON_NAME));
                         String conNo = cursor.getString(cursor.getColumnIndex(DBConstants.CONTACT_NO));
-                        byte[] conPhoto = cursor.getBlob(cursor.getColumnIndex(DBConstants.CONTACT_NO));
-                        Users users = new Users(contactId, conPerson, conNo, conPhoto);
+                        Users users = new Users(contactId, conPerson, conNo);
                         list.add(users);
                     } while (cursor.moveToNext());
                 }
